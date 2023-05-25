@@ -19,9 +19,34 @@
         7. When can you decide when to use a for or while, forEach and do while loop? <br><br><strong>FOR</strong> = to iterate through an array and loop over a number of times. <br><br><strong>WHILE</strong> = when working with user input and icrementing until something is not true. <br><br>
         8. Define hoisting and variable scoping? <br><br> No matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
     </p>
-    <form action="">Number1
+    <br><br>
+    <!-- <form action="">Number1
         <input type="button" value="Number">
+    </form> -->
+
+    <!-- Calculator form -->
+    <form id="calculatorForm">
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1" required>
+        
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2" required>
+        
+        <label for="operator">Operator:</label>
+        <select id="operator" required>
+          <option value="+">Addition (+)</option>
+          <option value="-">Subtraction (-)</option>
+          <option value="*">Multiplication (*)</option>
+          <option value="/">Division (/)</option>
+        </select>
+        
+        <div class="buttons">
+          <button type="button" onclick="calculate()">Display</button>
+          <button type="button" onclick="clearForm()">Clear</button>
+        </div>
     </form>
+      
+      <div class="result" id="result"></div>
     
     <script src="./script/code.js"></script>
 </body>
